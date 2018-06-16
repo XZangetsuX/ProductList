@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Agregar">
+
+    <EditText
+        android:id="@+id/txtAddName"
+        android:layout_width="355dp"
+        android:layout_marginTop="76dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Nombre" />
+
+    <EditText
+    android:id="@+id/txtAddDescrip"
+    android:layout_width="355dp"
+        android:layout_marginTop="10dp"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:hint="Descripción"
+    android:layout_below="@id/txtAddName"/>
+
+    <EditText
+    android:id="@+id/txtAddStockMax"
+    android:layout_width="355dp"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:hint="Stock Máximo"
+    android:layout_below="@id/txtAddDescrip"/>
+
+    <EditText
+        android:id="@+id/txtAddStockInicial"
+        android:layout_width="355dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Stock Inicial"
+        android:layout_below="@id/txtAddStockMax"
+        />
+
+    <EditText
+        android:id="@+id/txtAddPercentMin"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtAddName"
+        android:layout_marginBottom="166dp"
+        android:hint="Pocentaje minimo" />
+
+    <TextView
+
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtAddName"
+        android:layout_alignTop="@+id/txtAddPercentMin"
+        android:gravity="center"
+        android:text="%"
+        android:textColor="@color/black"
+        android:textSize="28dp" />
+
+    <EditText
+        android:id="@+id/txtAddPercentMax"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtAddName"
+        android:layout_marginBottom="113dp"
+        android:hint="Pocentaje maximo" />
+
+    <TextView
+
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtAddPercentMax"
+        android:layout_toEndOf="@+id/txtAddPercentMax"
+        android:text="%"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:gravity="center"/>
+
+    <Button
+    android:id="@+id/buttonAddListo"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="18dp"
+    android:text="Listo" />
+
+</RelativeLayout>
